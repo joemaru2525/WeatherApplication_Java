@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="labelTitle" prefHeight="400.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javayahooweather02.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="25.0" layoutY="360.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="125" layoutY="360" minHeight="16" minWidth="160" />
+
+        <Label fx:id="labelSubject" layoutX="25.0" layoutY="20.0" minHeight="16" minWidth="260" prefHeight="17.0" prefWidth="160.0" text="タイトル" />
+        <Label fx:id="labelAnnounce" layoutX="25.0" layoutY="50.0" prefHeight="17.0" prefWidth="220.0" text="発表日時" />
+        <Label fx:id="labelDate" layoutX="25.0" layoutY="80.0" text="日付" />
+        <Label fx:id="labelWeather" layoutX="25.0" layoutY="110.0" text="天候" />
+        <ImageView fx:id="picWeather" fitHeight="41.0" fitWidth="75.0" layoutX="25.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sun_clouds_st.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="labelHighTemp" layoutX="25.0" layoutY="210.0" text="最高気温：　" />
+        <Label fx:id="labelLowTemp" layoutX="25.0" layoutY="240.0" text="最低気温：　" />
+        <Label layoutX="25.0" layoutY="270.0" text="時間帯　：" />
+        <Label layoutX="25.0" layoutY="290.0" text="降水確率：　" />
+        <Label layoutX="100.0" layoutY="270.0" text="0 - 6" />
+        <Label layoutX="150.0" layoutY="270.0" text="6 - 12" />
+        <Label layoutX="200.0" layoutY="270.0" text="12 - 18" />
+        <Label layoutX="250.0" layoutY="270.0" text="18 - 24" />
+        <Label fx:id="labelPrecip01" layoutX="100.0" layoutY="290.0" text="Label" />
+        <Label fx:id="labelPrecip02" layoutX="150.0" layoutY="290.0" text="Label" />
+        <Label fx:id="labelPrecip03" layoutX="200.0" layoutY="290.0" text="Label" />
+        <Label fx:id="labelPrecip04" layoutX="250.0" layoutY="290.0" text="Label" />
+        <Label fx:id="labelPoweredBy" layoutX="25.0" layoutY="340.0" text="Powered by: https://weather.yahoo.co.jp/weather/" />
+    </children>
+</AnchorPane>
